@@ -14,10 +14,32 @@ body {
     background-color: black;
     display: flex;
     flex-wrap: wrap;
+    border: solid 1px black;
 }
 
 .square {
     width: 100px;
     height: 100px;
     background-color: white;
+    border: solid 2px black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: solid 15px blue;
+    box-sizing: border-box;
+}
+
+.cross {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: solid 15px red;
+    box-sizing: border-box;
 }
