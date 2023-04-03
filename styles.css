@@ -36,10 +36,12 @@ body {
     box-sizing: border-box;
 }
 
-.cross {
+.cross:after {
     width: 90px;
     height: 90px;
-    border-radius: 50%;
-    border: solid 15px red;
+    content: "\00d7";
+    color: red;
+    font-size: 30vh;
+    font-weight: bold;
     box-sizing: border-box;
 }
