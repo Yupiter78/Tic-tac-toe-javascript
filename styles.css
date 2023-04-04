@@ -28,7 +28,7 @@ body {
     align-items: center;
 }
 
-.circle {
+.blue-circle {
     width: 90px;
     height: 90px;
     border-radius: 50%;
@@ -36,12 +36,20 @@ body {
     box-sizing: border-box;
 }
 
-.cross:after {
+/*.cross:after {*/
+/*    width: 90px;*/
+/*    height: 90px;*/
+/*    content: "\00d7";*/
+/*    color: red;*/
+/*    font-size: 30vh;*/
+/*    font-weight: bold;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+.red-circle {
     width: 90px;
     height: 90px;
-    content: "\00d7";
-    color: red;
-    font-size: 30vh;
-    font-weight: bold;
+    border-radius: 50%;
+    border: solid 15px red;
     box-sizing: border-box;
 }
