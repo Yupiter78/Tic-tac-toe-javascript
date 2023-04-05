@@ -48,18 +48,18 @@ function checkScore() {
     //     }
     // })
     winnerCombos.forEach(array => {
-        const circleWinner = array.every(cell => addSquares[cell].firstChild?.classList.contains("circle"));
-        if (circleWinner) {
-            infoDisplay.textContent = "Circle Win!"
+        const circleWins = array.every(cell => addSquares[cell].firstChild?.classList.contains("circle"));
+        if (circleWins) {
+            infoDisplay.textContent = "Circle Wins!"
             addSquares.forEach(square => square.replaceWith(square.cloneNode(true)));
             return null;
         }
     });
 
     winnerCombos.forEach(array => {
-        const circleWinner = array.every(cell => addSquares[cell].firstChild?.classList.contains("cross"));
-        if (circleWinner) {
-            infoDisplay.textContent = "Cross Win!"
+        const crossWins = array.every(cell => addSquares[cell].firstChild?.classList.contains("cross"));
+        if (crossWins) {
+            infoDisplay.textContent = "Cross Wins!"
             addSquares.forEach(square => square.replaceWith(square.cloneNode(true)));
             return null;
         }
